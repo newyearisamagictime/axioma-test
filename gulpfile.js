@@ -39,7 +39,7 @@ gulp.task('render-pages', wrapPipe(function (success, error) {
             path.extname = ".html"
         }).on('error', error))
         .pipe(pug({
-            // pretty: true
+            pretty: true
         }).on('error', error))
         .pipe(gulp.dest('./'));
 }));
