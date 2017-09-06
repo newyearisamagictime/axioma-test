@@ -23,6 +23,31 @@
     width: 682px
     margin: 0 auto
 
+.app-button
+  text-decoration: none
+  display: inline-block
+  font-size: 12.59px;
+  font-family: "Soho Gothic Pro";
+  color: rgb(255, 255, 255);
+  height: 29px
+  line-height: 27px;
+  text-align: center;
+  border-radius: 3px;
+  background-image: linear-gradient( 90deg, #85c94e 0%, #70a942 100%);
+  box-shadow: inset 0 -1px 1px 0px rgba(133, 201, 78, 0.75), inset 0 1px 1px 0px rgba(255,255,255, 0.75)
+  text-shadow 1px 1px 1px rgba(0,0,0,.33)
+  padding: 0 12px
+  min-width: 62px
+  border: 1px solid #ccc
+  cursor: pointer
+
+  &:focus
+    outline: 0
+  &:hover
+    background-image: linear-gradient( 90deg, #6fb238 0%, #5e982f 100%);
+  &:active
+    background-image: linear-gradient( 90deg, #5d972f 0%, #6eb238 100%);
+    box-shadow: inset 0 1px 1px 0px rgba(133, 201, 78, 0.75), inset 0 -1px 1px 0px rgba(255,255,255, 0.75)
 .app-header
   display: flex
   justify-content: space-between
@@ -100,11 +125,47 @@
           position: absolute
           background: #d5d5d5
 
+.app-quote
+  padding: 5px 21px 0 5px;
+  &__name
+    font-size: 13px;
+    font-family: "Soho Gothic Pro";
+    color: #000;
+    font-weight: bold;
+  &__company
+    padding-top: 3px;
+    font-size: 11px;
+    font-family: "Soho Gothic Pro";
+    color: #646464;
+    font-weight: 300;
+  &__area
+    font-size: 12px
+    line-height: 18px
+    padding-left: 41px
+    padding-top: 15px;
+    padding-right: 24px;
+    &:before
+      position: absolute;
+      content: '\201c';
+      font-size: 55px;
+      font-family: "Stencil";
+      color: rgba(0,0,0,0.302);
+      line-height: 0.18;
+      left: -2px;
+      top: 29px;
+
+
+  &__more
+    text-align: right
+    padding-right: 13px;
+    padding-top: 16px;
+
 .app-form
   padding-right: 35px;
   padding-left: 5px;
   .app-form__button-container
     text-align: right
+    padding-top: 6px;
 
 .app-textarea
   .app-textarea__label
@@ -205,7 +266,7 @@
   text-transform: uppercase;
   text-align: center
   padding-bottom: 26px
-  margin-right: 42px;
+  padding-right: 42px;
   line-height: 13px;
   &:before
     content: ''
@@ -213,7 +274,7 @@
     height: 4px
     width: 64px
     left: 50%
-    margin-left: -29px
+    margin-left: -50px
     box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.27);
     background-color: #f0f0f0;
     border-radius: 2px
@@ -224,7 +285,7 @@
     height: 17px
     width: 17px
     left: 50%
-    margin-left: -6px
+    margin-left: -27px
     box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.27);
     background-color: #f0f0f0;
     bottom: 0
