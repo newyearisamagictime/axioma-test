@@ -21,6 +21,9 @@
     width: 980px
     margin: 0 auto
     padding-top: 17px;
+    @media(max-width: 980px)
+      flex-direction: column
+      width: auto
   &__navigation
     flex 1 0 50%
     padding-left: 6px
@@ -33,6 +36,10 @@
     font-weight: 300
     font-family: 'Soho Gothic Pro'
     color: #5a5a59
+    @media(max-width: 980px)
+      top auto
+      flex 1 0 100%
+      padding-right: 0
   &__social
     flex 1 0 100%
     padding-top: 14px;

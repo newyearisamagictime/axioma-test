@@ -1,5 +1,6 @@
 .app-applications-widget
   overflow: hidden
+  width: 100%
   &__header
     background: linear-gradient(to bottom, #7ac1df 0%,#3f8bc3 100%)
     border-top: 1px solid #2a77ac
@@ -14,9 +15,14 @@
       padding-top: 35px;
       padding-bottom: 45px;
       margin-left: -25px
+      @media(max-width: 980px)
+        margin-left: 0
+        padding: 35px 20px 45px
   &__content
     height 121px
     background: linear-gradient(to bottom, #f3f3f2 0%,#e3e3e3 99%)
+    @media(max-width: 500px)
+      height: auto
     &:after
       position: absolute
       width: 1300px
@@ -36,7 +42,19 @@
     width: 682px
     margin: 0 auto
     z-index: 3
+    @media(max-width: 980px)
+      left: auto
+      max-width: 682px
+    @media(max-width: 800px)
+      width: auto
+      max-width: none
+      padding: 0 20px
+    @media(max-width: 500px)
+      flex-direction: column
 
+  &__item
+    @media(max-width: 500px)
+      margin-bottom: 20px
 .app-button
   text-decoration: none
   display: inline-block
@@ -85,6 +103,9 @@
     width: 980px
     margin: 0 auto
     padding-top: 17px;
+    @media(max-width: 980px)
+      flex-direction: column
+      width: auto
   &__navigation
     flex 1 0 50%
     padding-left: 6px
@@ -97,6 +118,10 @@
     font-weight: 300
     font-family: 'Soho Gothic Pro'
     color: #5a5a59
+    @media(max-width: 980px)
+      top auto
+      flex 1 0 100%
+      padding-right: 0
   &__social
     flex 1 0 100%
     padding-top: 14px;
@@ -105,6 +130,9 @@
   display: flex
   justify-content: space-between
   align-items: center
+  @media(max-width: 980px)
+    flex-direction: column
+    align-items: center
 .app-input
   padding-bottom: 3px
   .app-input__label
@@ -144,11 +172,20 @@
     line-height: 15px
     text-transform: uppercase
     top: -2px
+    @media(max-width: 400px)
+      line-height: 23px
 .app-navigation
   &__content
     list-style: none
     top: -1px
     padding-right: 15px
+    @media(max-width: 980px)
+      padding-right: 0
+      top: 0
+      padding-top: 15px
+      padding-bottom: 15px
+    @media(max-width: 400px)
+      text-align: center
   &__item
     display: inline-block
     padding: 4px 10px 2px
@@ -190,6 +227,8 @@
         font-size: 12px
 .app-quote
   padding: 5px 21px 0 5px;
+  @media(max-width: 980px)
+    padding: 5px 13px
   &__name
     font-size: 13px;
     font-family: "Soho Gothic Pro";
@@ -226,6 +265,9 @@
 .app-form
   padding-right: 35px;
   padding-left: 5px;
+
+  @media(max-width: 980px)
+    padding: 0 20px
   .app-form__button-container
     text-align: right
     padding-top: 6px;
@@ -234,6 +276,8 @@
   background: #e9e8e8
   &__icon
     margin-right: 14px;
+    &:last-child
+      margin-right: 0
 .app-textarea
   .app-textarea__label
     color: #000000;
@@ -275,6 +319,10 @@
   font-size: 16.4px;
   letter-spacing: 0.12px;
   line-height: 27px;
+  @media(max-width: 980px)
+    width: auto
+    top auto
+    left: auto
   &__button
     margin-left: 8px;
     margin-right: 6px;
@@ -384,6 +432,10 @@
   font-size: 16.6px;
   left: 8px;
   padding-bottom: 31px;
+  @media(max-width: 980px)
+    width: auto
+    top auto
+    left: auto
 .app-sidebar-section-header
   color: #468ec4;
   font-family: "Soho Gothic Pro";
@@ -394,6 +446,8 @@
   padding-bottom: 26px
   padding-right: 42px;
   line-height: 13px;
+  @media(max-width: 980px)
+    padding: 0 20px 26px
   &:before
     content: ''
     position: absolute
@@ -405,6 +459,8 @@
     background-color: #f0f0f0;
     border-radius: 2px
     bottom: 6px
+    @media(max-width: 980px)
+      margin-left: -28px
   &:after
     content: ''
     position: absolute
@@ -416,3 +472,5 @@
     background-color: #f0f0f0;
     bottom: 0
     border-radius: 17px
+    @media(max-width: 980px)
+      margin-left: -5px

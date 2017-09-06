@@ -1,5 +1,6 @@
 .app-applications-widget
   overflow: hidden
+  width: 100%
   &__header
     background: linear-gradient(to bottom, #7ac1df 0%,#3f8bc3 100%)
     border-top: 1px solid #2a77ac
@@ -14,9 +15,14 @@
       padding-top: 35px;
       padding-bottom: 45px;
       margin-left: -25px
+      @media(max-width: 980px)
+        margin-left: 0
+        padding: 35px 20px 45px
   &__content
     height 121px
     background: linear-gradient(to bottom, #f3f3f2 0%,#e3e3e3 99%)
+    @media(max-width: 500px)
+      height: auto
     &:after
       position: absolute
       width: 1300px
@@ -36,3 +42,16 @@
     width: 682px
     margin: 0 auto
     z-index: 3
+    @media(max-width: 980px)
+      left: auto
+      max-width: 682px
+    @media(max-width: 800px)
+      width: auto
+      max-width: none
+      padding: 0 20px
+    @media(max-width: 500px)
+      flex-direction: column
+
+  &__item
+    @media(max-width: 500px)
+      margin-bottom: 20px
