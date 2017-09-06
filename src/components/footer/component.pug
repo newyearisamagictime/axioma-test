@@ -1,0 +1,8 @@
+mixin footer()
+    .app-footer(class=attributes.class)
+        .app-footer__content
+            +navigation("small")(class="app-footer__navigation")
+            .app-footer__copyright!= "Copyright &copy; 2012 DOT44. All Rights Reserved."
+            +social()(class="app-footer__social")
+
+

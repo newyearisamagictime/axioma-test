@@ -15,6 +15,15 @@ mixin button(title, type)
             button.app-button&attributes(attributes)= title
         when "a"
             a.app-button&attributes(attributes)= title
+mixin footer()
+    .app-footer(class=attributes.class)
+        .app-footer__content
+            +navigation("small")(class="app-footer__navigation")
+            .app-footer__copyright!= "Copyright &copy; 2012 DOT44. All Rights Reserved."
+            +social()(class="app-footer__social")
+
+
+
 mixin header()
     header.app-header(class=attributes.class)
         +logo()(class="app-header__logo")
@@ -77,15 +86,34 @@ mixin request-form()
             +button("SEND", "button")
 
 
+mixin social()
+    .app-social(class=attributes.class)
+        +social-icon('#', 'fb')(class="app-social__icon")
+        +social-icon('#', 't')(class="app-social__icon")
+        +social-icon('#', 'in')(class="app-social__icon")
+
 mixin textarea(title, name)
     .app-textarea(class=attributes.class)
         .app-textarea__label= title + ':'
         textarea.app-textarea__area(name = name)
+mixin well()
+    .app-well
+        | If you're considering mobile application development, then call one of our consultants now on
+        a.app-well__button(href="tel:+37129153367")
+            span.app-well__button-code="+371"
+            span.app-well__button-phone="2 9153367"
+        | to see how you could get your business mobile
+
 mixin applications-widget-item(type, title)
     .app-applications-widget-item(class=attributes.class class=`app-applications-widget-item--${type}`)
         .app-applications-widget-item__content
             .app-applications-widget-item__image
             .app-applications-widget-item__title= title
+mixin social-icon(url, type)
+    a.app-social-icon(class=attributes.class, href=url, class=`app-social-icon--${type}`)
+
+
+
 mixin text-accent(text)
     .app-text-accent(class=attributes.class)= text
 
