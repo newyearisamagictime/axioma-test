@@ -1,0 +1,54 @@
+.app-applications-widget-item
+  cursor: pointer
+  &__image
+    width: 108px
+    height: 108px
+    margin: 0 auto
+    background-repeat: no-repeat
+    z-index: 2
+  &--business
+    .app-applications-widget-item__image
+      background-image: url('./../images/applications/business.png')
+      background-position: center 20px;
+  &--entertainment
+    .app-applications-widget-item__image
+      background-position: 1px 23px;
+      background-image: url('./../images/applications/entertainment.png')
+  &--gaming
+    .app-applications-widget-item__image
+      background-position: 18px 25px;
+      background-image: url('./../images/applications/gaming.png')
+  &:before
+    position: absolute
+    width: 100px
+    height: 100px
+    border-radius: 100px
+    background: #fff
+    top: 4px
+    left: 50%
+    margin-left: -50px
+    content: ''
+    border: 1px solid rgba(0, 0, 0, 0.3)
+    z-index: 1
+  &:hover
+    &:after
+      position: absolute
+      width: 108px
+      height: 108px
+      border-radius: 108px
+      background: rgba(255, 255, 255, 0.35)
+      top: 0
+      left: 50%
+      margin-left: -54px
+      content: ''
+      border: 1px solid rgba(0, 0, 0, 0.3)
+      z-index: 0
+  &__title
+    color #000000
+    font-family "Soho Gothic Pro"
+    font-size 15.61px
+    font-weight 400
+    line-height 18px
+    text-align: center
+    padding-left: 7px;
+    padding-top: 5px;

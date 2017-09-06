@@ -1,0 +1,28 @@
+mixin navigation(size)
+    div.app-navigation(class=attributes.class class={"app-navigation--big": size === 'big', "app-navigation--small": size === 'small'})
+        ul.app-navigation__content
+            -
+                var items = [{
+                    url: '#',
+                    title: 'Home',
+                    active: true
+                },{
+                    url: '#',
+                    title: 'Services',
+                    active: false
+                },{
+                    url: '#',
+                    title: 'Company',
+                    active: false
+                },{
+                    url: '#',
+                    title: 'Careers',
+                    active: false
+                },{
+                    url: '#',
+                    title: 'Contact Us',
+                    active: false
+                }];
+            each item in items
+                li.app-navigation__item(class={"app-navigation__item--active": item.active === true})
+                    a.app-navigation__item-link(href=item.url)= item.title

@@ -1,0 +1,10 @@
+mixin applications-widget()
+    .app-applications-widget(class=attributes.class)
+        .app-applications-widget__header
+            h1.app-applications-widget__header-title
+                | European Mobile Application Development Company
+        .app-applications-widget__content
+            .app-applications-widget__inner
+                +applications-widget-item("business", "Business Apps")(class="app-applications-widget__item")
+                +applications-widget-item("entertainment", "Entertainment Apps")(class="app-applications-widget__item")
+                +applications-widget-item("gaming", "Gaming Apps")(class="app-applications-widget__item")

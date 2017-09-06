@@ -1,0 +1,231 @@
+.app-applications-widget
+  &__header
+    background: linear-gradient(to bottom, #7ac1df 0%,#3f8bc3 100%)
+    border-top: 1px solid #2a77ac
+    &-title
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.33)
+      color: #ffffff
+      font-family: "Soho Gothic Pro"
+      font-size: 29px
+      font-weight: 500
+      text-align: center
+      padding-top: 35px;
+      padding-bottom: 46px;
+      margin-left: -25px
+  &__content
+    height 120px
+    background: linear-gradient(to bottom, #f3f3f2 0%,#e3e3e3 99%)
+  &__inner
+    display: flex
+    justify-content: space-between
+    left: -18px;
+    top: -25px;
+    width: 682px
+    margin: 0 auto
+
+.app-header
+  display: flex
+  justify-content: space-between
+  align-items: center
+.app-input
+  padding-bottom: 3px
+  .app-input__label
+    color: #000000;
+    font-family: "Soho Gothic Pro";
+    font-size: 11.4px;
+    font-weight: 400;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    display: block;
+  .app-input__area
+    width: 100%;
+    height: 36px;
+    border: 2px solid rgba(0, 0, 0, 0.23);
+    color: #000000;
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px
+    padding: 0 8px
+    border-radius: 2px
+    &:focus
+      outline: none
+      border: 2px solid rgba(0, 0, 0, 0.5);
+
+.app-logo
+  display: flex
+  align-items: center
+  .app-logo__image
+    padding-right: 8px
+  .app-logo__title
+    opacity: 0.5
+    color: #181412
+    font-family: "Soho Gothic Pro"
+    font-size: 23px
+    font-weight: 400
+    line-height: 15px
+    text-transform: uppercase
+    top: -2px
+.app-navigation
+  &__content
+    list-style: none
+    top: -1px
+    padding-right: 15px
+  &__item
+    display: inline-block
+    padding: 4px 10px 2px
+    height: 27px
+    &-link
+      text-decoration: none
+      font-family: 'Soho Gothic Pro'
+      color: #468fc5
+      font-weight: 400
+      font-size: 15px
+      line-height: 17px
+      display: inline-block
+      &:hover
+        border-bottom: 1px solid
+    &--active
+      .app-navigation__item-link
+        color: #5a5a59
+        cursor: default
+        &:hover
+          border-bottom: none
+      &:before
+          content: ''
+          top: 0
+          bottom: 0
+          left: 0
+          right: 0
+          position: absolute
+          background: #d5d5d5
+
+.app-form
+  padding-right: 35px;
+  padding-left: 5px;
+  .app-form__button-container
+    text-align: right
+
+.app-textarea
+  .app-textarea__label
+    color: #000000;
+    font-family: "Soho Gothic Pro";
+    font-size: 11.4px;
+    font-weight: 400;
+    padding-bottom: 4px;
+    padding-top: 2px;
+    display: block;
+  .app-textarea__area
+    width: 100%;
+    height: 73px;
+    border: 2px solid rgba(0, 0, 0, 0.23);
+    color: #000000;
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px
+    padding: 0 8px
+    border-radius: 2px
+    &:focus
+      outline: none
+      border: 2px solid rgba(0, 0, 0, 0.5);
+
+
+.app-applications-widget-item
+  cursor: pointer
+  &__image
+    width: 108px
+    height: 108px
+    margin: 0 auto
+    background-repeat: no-repeat
+    z-index: 2
+  &--business
+    .app-applications-widget-item__image
+      background-image: url('./../images/applications/business.png')
+      background-position: center 20px;
+  &--entertainment
+    .app-applications-widget-item__image
+      background-position: 1px 23px;
+      background-image: url('./../images/applications/entertainment.png')
+  &--gaming
+    .app-applications-widget-item__image
+      background-position: 18px 25px;
+      background-image: url('./../images/applications/gaming.png')
+  &:before
+    position: absolute
+    width: 100px
+    height: 100px
+    border-radius: 100px
+    background: #fff
+    top: 4px
+    left: 50%
+    margin-left: -50px
+    content: ''
+    border: 1px solid rgba(0, 0, 0, 0.3)
+    z-index: 1
+  &:hover
+    &:after
+      position: absolute
+      width: 108px
+      height: 108px
+      border-radius: 108px
+      background: rgba(255, 255, 255, 0.35)
+      top: 0
+      left: 50%
+      margin-left: -54px
+      content: ''
+      border: 1px solid rgba(0, 0, 0, 0.3)
+      z-index: 0
+  &__title
+    color #000000
+    font-family "Soho Gothic Pro"
+    font-size 15.61px
+    font-weight 400
+    line-height 18px
+    text-align: center
+    padding-left: 7px;
+    padding-top: 5px;
+.app-text-accent
+  width: 490px
+  color #333333
+  font-family "Soho Gothic Pro"
+  font-weight 500
+  line-height 24px
+  text-align: center
+  margin: 0 auto;
+  padding-top: 22px;
+  font-size: 16.6px;
+  left: 8px;
+  padding-bottom: 31px;
+.app-sidebar-section-header
+  color: #468ec4;
+  font-family: "Soho Gothic Pro";
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center
+  padding-bottom: 26px
+  margin-right: 42px;
+  line-height: 13px;
+  &:before
+    content: ''
+    position: absolute
+    height: 4px
+    width: 64px
+    left: 50%
+    margin-left: -29px
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.27);
+    background-color: #f0f0f0;
+    border-radius: 2px
+    bottom: 6px
+  &:after
+    content: ''
+    position: absolute
+    height: 17px
+    width: 17px
+    left: 50%
+    margin-left: -6px
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.27);
+    background-color: #f0f0f0;
+    bottom: 0
+    border-radius: 17px

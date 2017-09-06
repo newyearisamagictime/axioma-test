@@ -1,0 +1,6 @@
+mixin button(title, type)
+    case type
+        when "button"
+            button.app-button&attributes(attributes)= title
+        when "a"
+            a.app-button&attributes(attributes)= title

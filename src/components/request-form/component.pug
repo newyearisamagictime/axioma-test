@@ -1,0 +1,8 @@
+mixin request-form()
+    form.app-form(class=attributes.class)
+        +input("Your Name", "name", "text")
+        +input("E-mail", "email", "email")
+        +textarea("Message", "message")
+        .app-form__button-container
+            +button("SEND", "button")
+

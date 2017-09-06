@@ -1,0 +1,443 @@
+@font-face {
+  font-family: 'Soho Gothic Pro';
+  src: url("./../vendor/fonts/SohoGothicPro-UltraItalic.eot");
+  src: url("./../vendor/fonts/SohoGothicPro-UltraItalic.eot?#iefix") format('embedded-opentype'), url("./../vendor/fonts/SohoGothicPro-UltraItalic.woff2") format('woff2'), url("./../vendor/fonts/SohoGothicPro-UltraItalic.woff") format('woff'), url("./../vendor/fonts/SohoGothicPro-UltraItalic.ttf") format('truetype'), url("./../vendor/fonts/SohoGothicPro-UltraItalic.svg#SohoGothicPro-UltraItalic") format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Soho Gothic Pro';
+  src: url("./../vendor/fonts/SohoGothicPro-Bold.eot");
+  src: url("./../vendor/fonts/SohoGothicPro-Bold.eot?#iefix") format('embedded-opentype'), url("./../vendor/fonts/SohoGothicPro-Bold.woff2") format('woff2'), url("./../vendor/fonts/SohoGothicPro-Bold.woff") format('woff'), url("./../vendor/fonts/SohoGothicPro-Bold.ttf") format('truetype'), url("./../vendor/fonts/SohoGothicPro-Bold.svg#SohoGothicPro-Bold") format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Soho Gothic Pro';
+  src: url("./../vendor/fonts/SohoGothicPro-BoldItalic.eot");
+  src: url("./../vendor/fonts/SohoGothicPro-BoldItalic.eot?#iefix") format('embedded-opentype'), url("./../vendor/fonts/SohoGothicPro-BoldItalic.woff2") format('woff2'), url("./../vendor/fonts/SohoGothicPro-BoldItalic.woff") format('woff'), url("./../vendor/fonts/SohoGothicPro-BoldItalic.ttf") format('truetype'), url("./../vendor/fonts/SohoGothicPro-BoldItalic.svg#SohoGothicPro-BoldItalic") format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Soho Gothic Pro';
+  src: url("./../vendor/fonts/SohoGothicPro-ExtraBold.eot");
+  src: url("./../vendor/fonts/SohoGothicPro-ExtraBold.eot?#iefix") format('embedded-opentype'), url("./../vendor/fonts/SohoGothicPro-ExtraBold.woff2") format('woff2'), url("./../vendor/fonts/SohoGothicPro-ExtraBold.woff") format('woff'), url("./../vendor/fonts/SohoGothicPro-ExtraBold.ttf") format('truetype'), url("./../vendor/fonts/SohoGothicPro-ExtraBold.svg#SohoGothicPro-ExtraBold") format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Soho Gothic Pro';
+  src: url("./../vendor/fonts/SohoGothicPro-LightItalic.eot");
+  src: url("./../vendor/fonts/SohoGothicPro-LightItalic.eot?#iefix") format('embedded-opentype'), url("./../vendor/fonts/SohoGothicPro-LightItalic.woff2") format('woff2'), url("./../vendor/fonts/SohoGothicPro-LightItalic.woff") format('woff'), url("./../vendor/fonts/SohoGothicPro-LightItalic.ttf") format('truetype'), url("./../vendor/fonts/SohoGothicPro-LightItalic.svg#SohoGothicPro-LightItalic") format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Soho Gothic Pro';
+  src: url("./../vendor/fonts/SohoGothicPro-Thin.eot");
+  src: url("./../vendor/fonts/SohoGothicPro-Thin.eot?#iefix") format('embedded-opentype'), url("./../vendor/fonts/SohoGothicPro-Thin.woff2") format('woff2'), url("./../vendor/fonts/SohoGothicPro-Thin.woff") format('woff'), url("./../vendor/fonts/SohoGothicPro-Thin.ttf") format('truetype'), url("./../vendor/fonts/SohoGothicPro-Thin.svg#SohoGothicPro-Thin") format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Soho Gothic Pro';
+  src: url("./../vendor/fonts/SohoGothicPro-ThinItalic.eot");
+  src: url("./../vendor/fonts/SohoGothicPro-ThinItalic.eot?#iefix") format('embedded-opentype'), url("./../vendor/fonts/SohoGothicPro-ThinItalic.woff2") format('woff2'), url("./../vendor/fonts/SohoGothicPro-ThinItalic.woff") format('woff'), url("./../vendor/fonts/SohoGothicPro-ThinItalic.ttf") format('truetype'), url("./../vendor/fonts/SohoGothicPro-ThinItalic.svg#SohoGothicPro-ThinItalic") format('svg');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Soho Gothic Pro';
+  src: url("./../vendor/fonts/SohoGothicPro-Medium.eot");
+  src: url("./../vendor/fonts/SohoGothicPro-Medium.eot?#iefix") format('embedded-opentype'), url("./../vendor/fonts/SohoGothicPro-Medium.woff2") format('woff2'), url("./../vendor/fonts/SohoGothicPro-Medium.woff") format('woff'), url("./../vendor/fonts/SohoGothicPro-Medium.ttf") format('truetype'), url("./../vendor/fonts/SohoGothicPro-Medium.svg#SohoGothicPro-Medium") format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Soho Gothic Pro';
+  src: url("./../vendor/fonts/SohoGothicPro-ExtraBoldIt.eot");
+  src: url("./../vendor/fonts/SohoGothicPro-ExtraBoldIt.eot?#iefix") format('embedded-opentype'), url("./../vendor/fonts/SohoGothicPro-ExtraBoldIt.woff2") format('woff2'), url("./../vendor/fonts/SohoGothicPro-ExtraBoldIt.woff") format('woff'), url("./../vendor/fonts/SohoGothicPro-ExtraBoldIt.ttf") format('truetype'), url("./../vendor/fonts/SohoGothicPro-ExtraBoldIt.svg#SohoGothicPro-ExtraBoldIt") format('svg');
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Soho Gothic Pro';
+  src: url("./../vendor/fonts/SohoGothicPro-Regular.eot");
+  src: url("./../vendor/fonts/SohoGothicPro-Regular.eot?#iefix") format('embedded-opentype'), url("./../vendor/fonts/SohoGothicPro-Regular.woff2") format('woff2'), url("./../vendor/fonts/SohoGothicPro-Regular.woff") format('woff'), url("./../vendor/fonts/SohoGothicPro-Regular.ttf") format('truetype'), url("./../vendor/fonts/SohoGothicPro-Regular.svg#SohoGothicPro-Regular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Soho Gothic Pro';
+  src: url("./../vendor/fonts/SohoGothicPro-Italic.eot");
+  src: url("./../vendor/fonts/SohoGothicPro-Italic.eot?#iefix") format('embedded-opentype'), url("./../vendor/fonts/SohoGothicPro-Italic.woff2") format('woff2'), url("./../vendor/fonts/SohoGothicPro-Italic.woff") format('woff'), url("./../vendor/fonts/SohoGothicPro-Italic.ttf") format('truetype'), url("./../vendor/fonts/SohoGothicPro-Italic.svg#SohoGothicPro-Italic") format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Soho Gothic Pro';
+  src: url("./../vendor/fonts/SohoGothicPro-MediumItalic.eot");
+  src: url("./../vendor/fonts/SohoGothicPro-MediumItalic.eot?#iefix") format('embedded-opentype'), url("./../vendor/fonts/SohoGothicPro-MediumItalic.woff2") format('woff2'), url("./../vendor/fonts/SohoGothicPro-MediumItalic.woff") format('woff'), url("./../vendor/fonts/SohoGothicPro-MediumItalic.ttf") format('truetype'), url("./../vendor/fonts/SohoGothicPro-MediumItalic.svg#SohoGothicPro-MediumItalic") format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Soho Gothic Pro';
+  src: url("./../vendor/fonts/SohoGothicPro-Ultra.eot");
+  src: url("./../vendor/fonts/SohoGothicPro-Ultra.eot?#iefix") format('embedded-opentype'), url("./../vendor/fonts/SohoGothicPro-Ultra.woff2") format('woff2'), url("./../vendor/fonts/SohoGothicPro-Ultra.woff") format('woff'), url("./../vendor/fonts/SohoGothicPro-Ultra.ttf") format('truetype'), url("./../vendor/fonts/SohoGothicPro-Ultra.svg#SohoGothicPro-Ultra") format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Soho Gothic Pro';
+  src: url("./../vendor/fonts/SohoGothicPro-Light.eot");
+  src: url("./../vendor/fonts/SohoGothicPro-Light.eot?#iefix") format('embedded-opentype'), url("./../vendor/fonts/SohoGothicPro-Light.woff2") format('woff2'), url("./../vendor/fonts/SohoGothicPro-Light.woff") format('woff'), url("./../vendor/fonts/SohoGothicPro-Light.ttf") format('truetype'), url("./../vendor/fonts/SohoGothicPro-Light.svg#SohoGothicPro-Light") format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+.app-applications-widget__header {
+  background: -webkit-linear-gradient(top, #7ac1df 0%, #3f8bc3 100%);
+  background: -moz-linear-gradient(top, #7ac1df 0%, #3f8bc3 100%);
+  background: -o-linear-gradient(top, #7ac1df 0%, #3f8bc3 100%);
+  background: linear-gradient(to bottom, #7ac1df 0%, #3f8bc3 100%);
+  border-top: 1px solid #2a77ac;
+}
+.app-applications-widget__header-title {
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.33);
+  color: #fff;
+  font-family: "Soho Gothic Pro";
+  font-size: 29px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 46px;
+  margin-left: -25px;
+}
+.app-applications-widget__content {
+  height: 120px;
+  background: -webkit-linear-gradient(top, #f3f3f2 0%, #e3e3e3 99%);
+  background: -moz-linear-gradient(top, #f3f3f2 0%, #e3e3e3 99%);
+  background: -o-linear-gradient(top, #f3f3f2 0%, #e3e3e3 99%);
+  background: linear-gradient(to bottom, #f3f3f2 0%, #e3e3e3 99%);
+}
+.app-applications-widget__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  left: -18px;
+  top: -25px;
+  width: 682px;
+  margin: 0 auto;
+}
+.app-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.app-input {
+  padding-bottom: 3px;
+}
+.app-input .app-input__label {
+  color: #000;
+  font-family: "Soho Gothic Pro";
+  font-size: 11.4px;
+  font-weight: 400;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  display: block;
+}
+.app-input .app-input__area {
+  width: 100%;
+  height: 36px;
+  border: 2px solid rgba(0,0,0,0.23);
+  color: #000;
+  font-family: Tahoma;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 0 8px;
+  -moz-border-radius: 2px;
+       border-radius: 2px;
+}
+.app-input .app-input__area:focus {
+  outline: none;
+  border: 2px solid rgba(0,0,0,0.5);
+}
+.app-logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.app-logo .app-logo__image {
+  padding-right: 8px;
+}
+.app-logo .app-logo__title {
+  opacity: 0.5;
+  color: #181412;
+  font-family: "Soho Gothic Pro";
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 15px;
+  text-transform: uppercase;
+  top: -2px;
+}
+.app-navigation__content {
+  list-style: none;
+  top: -1px;
+  padding-right: 15px;
+}
+.app-navigation__item {
+  display: inline-block;
+  padding: 4px 10px 2px;
+  height: 27px;
+}
+.app-navigation__item-link {
+  text-decoration: none;
+  font-family: 'Soho Gothic Pro';
+  color: #468fc5;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  display: inline-block;
+}
+.app-navigation__item-link:hover {
+  border-bottom: 1px solid;
+}
+.app-navigation__item--active .app-navigation__item-link {
+  color: #5a5a59;
+  cursor: default;
+}
+.app-navigation__item--active .app-navigation__item-link:hover {
+  border-bottom: none;
+}
+.app-navigation__item--active:before {
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background: #d5d5d5;
+}
+.app-form {
+  padding-right: 35px;
+  padding-left: 5px;
+}
+.app-form .app-form__button-container {
+  text-align: right;
+}
+.app-textarea .app-textarea__label {
+  color: #000;
+  font-family: "Soho Gothic Pro";
+  font-size: 11.4px;
+  font-weight: 400;
+  padding-bottom: 4px;
+  padding-top: 2px;
+  display: block;
+}
+.app-textarea .app-textarea__area {
+  width: 100%;
+  height: 73px;
+  border: 2px solid rgba(0,0,0,0.23);
+  color: #000;
+  font-family: Tahoma;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 0 8px;
+  -moz-border-radius: 2px;
+       border-radius: 2px;
+}
+.app-textarea .app-textarea__area:focus {
+  outline: none;
+  border: 2px solid rgba(0,0,0,0.5);
+}
+.app-applications-widget-item {
+  cursor: pointer;
+}
+.app-applications-widget-item__image {
+  width: 108px;
+  height: 108px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+.app-applications-widget-item--business .app-applications-widget-item__image {
+  background-image: url("./../images/applications/business.png");
+  background-position: center 20px;
+}
+.app-applications-widget-item--entertainment .app-applications-widget-item__image {
+  background-position: 1px 23px;
+  background-image: url("./../images/applications/entertainment.png");
+}
+.app-applications-widget-item--gaming .app-applications-widget-item__image {
+  background-position: 18px 25px;
+  background-image: url("./../images/applications/gaming.png");
+}
+.app-applications-widget-item:before {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 100px;
+       border-radius: 100px;
+  background: #fff;
+  top: 4px;
+  left: 50%;
+  margin-left: -50px;
+  content: '';
+  border: 1px solid rgba(0,0,0,0.3);
+  z-index: 1;
+}
+.app-applications-widget-item:hover:after {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  -moz-border-radius: 108px;
+       border-radius: 108px;
+  background: rgba(255,255,255,0.35);
+  top: 0;
+  left: 50%;
+  margin-left: -54px;
+  content: '';
+  border: 1px solid rgba(0,0,0,0.3);
+  z-index: 0;
+}
+.app-applications-widget-item__title {
+  color: #000;
+  font-family: "Soho Gothic Pro";
+  font-size: 15.61px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  padding-left: 7px;
+  padding-top: 5px;
+}
+.app-text-accent {
+  width: 490px;
+  color: #333;
+  font-family: "Soho Gothic Pro";
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 22px;
+  font-size: 16.6px;
+  left: 8px;
+  padding-bottom: 31px;
+}
+.app-sidebar-section-header {
+  color: #468ec4;
+  font-family: "Soho Gothic Pro";
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 26px;
+  margin-right: 42px;
+  line-height: 13px;
+}
+.app-sidebar-section-header:before {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 64px;
+  left: 50%;
+  margin-left: -29px;
+  -moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.27);
+       box-shadow: inset 1px 1px 1px rgba(0,0,0,0.27);
+  background-color: #f0f0f0;
+  -moz-border-radius: 2px;
+       border-radius: 2px;
+  bottom: 6px;
+}
+.app-sidebar-section-header:after {
+  content: '';
+  position: absolute;
+  height: 17px;
+  width: 17px;
+  left: 50%;
+  margin-left: -6px;
+  -moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.27);
+       box-shadow: inset 1px 1px 1px rgba(0,0,0,0.27);
+  background-color: #f0f0f0;
+  bottom: 0;
+  -moz-border-radius: 17px;
+       border-radius: 17px;
+}
+html,
+body {
+  height: 100%;
+}
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+.app {
+  background: #fff;
+  font-family: 'Tahoma';
+  color: #333;
+  font-size: 15px;
+}
+.app__header {
+  width: 960px;
+  margin: 0 auto;
+  height: 98px;
+  padding: 19px 8px 0;
+}
+.app__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 27px;
+}
+.app__main {
+  width: 605px;
+  top: -3px;
+  margin-left: 4px;
+}
+.app__main p {
+  margin-bottom: 11px;
+}
+.app__sidebar {
+  width: 288px;
+}

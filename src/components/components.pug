@@ -1,0 +1,90 @@
+mixin applications-widget()
+    .app-applications-widget(class=attributes.class)
+        .app-applications-widget__header
+            h1.app-applications-widget__header-title
+                | European Mobile Application Development Company
+        .app-applications-widget__content
+            .app-applications-widget__inner
+                +applications-widget-item("business", "Business Apps")(class="app-applications-widget__item")
+                +applications-widget-item("entertainment", "Entertainment Apps")(class="app-applications-widget__item")
+                +applications-widget-item("gaming", "Gaming Apps")(class="app-applications-widget__item")
+
+mixin button(title, type)
+    case type
+        when "button"
+            button.app-button&attributes(attributes)= title
+        when "a"
+            a.app-button&attributes(attributes)= title
+mixin header()
+    header.app-header(class=attributes.class)
+        +logo()(class="app-header__logo")
+        +navigation("big")(class="app-header__navigation")
+
+mixin input(title, name, type)
+    .app-input(class=attributes.class)
+        label.app-input__label= title + ':'
+        input.app-input__area(name = name, type = type)
+mixin logo()
+    div.app-logo(class=attributes.class)
+        img.app-logo__image(src="./images/dot.png")
+        span.app-logo__title= 'SOFTWARE STUDIO'
+
+mixin navigation(size)
+    div.app-navigation(class=attributes.class class={"app-navigation--big": size === 'big', "app-navigation--small": size === 'small'})
+        ul.app-navigation__content
+            -
+                var items = [{
+                    url: '#',
+                    title: 'Home',
+                    active: true
+                },{
+                    url: '#',
+                    title: 'Services',
+                    active: false
+                },{
+                    url: '#',
+                    title: 'Company',
+                    active: false
+                },{
+                    url: '#',
+                    title: 'Careers',
+                    active: false
+                },{
+                    url: '#',
+                    title: 'Contact Us',
+                    active: false
+                }];
+            each item in items
+                li.app-navigation__item(class={"app-navigation__item--active": item.active === true})
+                    a.app-navigation__item-link(href=item.url)= item.title
+
+mixin quote(name, company, area)
+    .app-quote(class=attributes.class)
+        .app-quote__name= name
+        .app-quote__company= company
+        .app-quote__area= area
+
+
+mixin request-form()
+    form.app-form(class=attributes.class)
+        +input("Your Name", "name", "text")
+        +input("E-mail", "email", "email")
+        +textarea("Message", "message")
+        .app-form__button-container
+            +button("SEND", "button")
+
+
+mixin textarea(title, name)
+    .app-textarea(class=attributes.class)
+        .app-textarea__label= title + ':'
+        textarea.app-textarea__area(name = name)
+mixin applications-widget-item(type, title)
+    .app-applications-widget-item(class=attributes.class class=`app-applications-widget-item--${type}`)
+        .app-applications-widget-item__content
+            .app-applications-widget-item__image
+            .app-applications-widget-item__title= title
+mixin text-accent(text)
+    .app-text-accent(class=attributes.class)= text
+
+mixin sidebar-section-header(text)
+    .app-sidebar-section-header(class=attributes.class)= text

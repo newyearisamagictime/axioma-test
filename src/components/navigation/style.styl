@@ -1,0 +1,33 @@
+.app-navigation
+  &__content
+    list-style: none
+    top: -1px
+    padding-right: 15px
+  &__item
+    display: inline-block
+    padding: 4px 10px 2px
+    height: 27px
+    &-link
+      text-decoration: none
+      font-family: 'Soho Gothic Pro'
+      color: #468fc5
+      font-weight: 400
+      font-size: 15px
+      line-height: 17px
+      display: inline-block
+      &:hover
+        border-bottom: 1px solid
+    &--active
+      .app-navigation__item-link
+        color: #5a5a59
+        cursor: default
+        &:hover
+          border-bottom: none
+      &:before
+          content: ''
+          top: 0
+          bottom: 0
+          left: 0
+          right: 0
+          position: absolute
+          background: #d5d5d5
